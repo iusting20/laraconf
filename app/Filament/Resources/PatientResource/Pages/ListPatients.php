@@ -13,7 +13,10 @@ class ListPatients extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\Action::make('upload')
+                ->label('Add New Pet')
+                ->icon('heroicon-o-arrow-up-tray')
+                ->url(route('filament.admin.resources.patients.create')),
             Actions\Action::make('Export')
                 ->url(route('patients.export'))
                 ->icon('heroicon-o-document-text')

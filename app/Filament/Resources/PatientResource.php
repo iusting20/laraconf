@@ -16,9 +16,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class PatientResource extends Resource
 {
     protected static ?string $model = Patient::class;
-
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
+    protected static ?string $navigationLabel = 'Pets';
+    protected static ?string $label = 'Pets';
+    protected static ?string $navigationGroup = 'Self Service';
     public static function form(Form $form): Form
     {
         return $form
@@ -98,7 +99,6 @@ class PatientResource extends Resource
             'index' => Pages\ListPatients::route('/'),
             'create' => Pages\CreatePatient::route('/create'),
             'edit' => Pages\EditPatient::route('/{record}/edit'),
-            'pet-pictures' => Pages\PetPictures::route('/pet-pictures'),
         ];
     }
 }

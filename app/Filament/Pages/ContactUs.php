@@ -10,4 +10,5 @@ class ContactUs extends Page
     protected static ?string $navigationIcon = 'heroicon-o-phone';
     protected static string $view = 'filament.pages.contact';
     protected static bool $shouldRegisterNavigation = true;
+    protected static ?int $navigationSort = 3;
 } 
