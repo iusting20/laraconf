@@ -10,4 +10,5 @@ class Dashboard extends Page
 
     protected static ?string $navigationLabel = 'Home';
     protected static string $view = 'filament.pages.dashboard';
+    protected static bool $shouldShowTitle = false;
 }
