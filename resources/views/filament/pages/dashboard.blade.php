@@ -2,7 +2,7 @@
 
 <div class="space-y-6">
     <div class="text-center">
-        <h1 class="text-3xl font-bold text-blue-900">Happy Pets Animal Shelter</h1>
+        <h1 class="text-3xl font-bold text-red-900">Happy Pets Animal Shelter</h1>
         <p class="mt-2 text-lg text-gray-600">Connecting Loving Homes with Furry Friends</p>
     </div>
 
