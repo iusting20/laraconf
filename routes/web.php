@@ -13,3 +13,8 @@ Route::get('/patients/export', function () {
 Route::get('/patients/duplicate/{patient}', function ($patient) {
     return 'Here is the duplicate of ' . $patient;
 })->name('patients.duplicate');
+
+Route::get('/chat-app', function () {
+    return view('chat-app');
+})->name('chat-app');
+
